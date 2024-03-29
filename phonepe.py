@@ -15,7 +15,7 @@ import mysql.connector
 
 #Aggregate Transactions
 
-path_1="C:/Users/91832/Desktop/phonepe/pulse/data/aggregated/transaction/country/india/state/"
+path_1="C:/Users/91832/Desktop/phonepe/pulse/data/aggregated/transaction/country/india/state/" #the path from the pulse data aggregate transactions
 aggre_trans_list = os.listdir(path_1)
 
 column_1={"States":[], "Years":[], "Quarter":[], "Transaction_type":[], "Transaction_count":[], "Transaction_amount":[]}
@@ -54,7 +54,7 @@ aggre_transaction["States"] = aggre_transaction["States"].str.replace("dadra-&-n
 
 # Aggregate Users
 
-path_2="C:/Users/91832/Desktop/phonepe/pulse/data/aggregated/user/country/india/state/"
+path_2="C:/Users/91832/Desktop/phonepe/pulse/data/aggregated/user/country/india/state/"  #aggregate users path
 aggre_user_list = os.listdir(path_2)
 
 column_2 = {"States":[], "Years":[], "Quarter":[], "Brands":[], "Transaction_count":[], "Percentage":[]}
@@ -97,7 +97,7 @@ aggre_user["States"] = aggre_user["States"].str.replace("dadra-&-nagar-haveli-&-
 
 # Map Transaction
 
-path_3="C:/Users/91832/Desktop/phonepe/pulse/data/map/transaction/hover/country/india/state/"
+path_3="C:/Users/91832/Desktop/phonepe/pulse/data/map/transaction/hover/country/india/state/"  #map transactions path
 map_trans_list = os.listdir(path_3)
 
 column_3 = {"States":[], "Years":[], "Quarter":[], "District":[], "Transaction_count":[], "Transaction_amount":[]}
@@ -136,7 +136,7 @@ map_transaction["States"] = map_transaction["States"].str.replace("dadra-&-nagar
 
 
 # Map User
-path_4="C:/Users/91832/Desktop/phonepe/pulse/data/map/user/hover/country/india/state/"
+path_4="C:/Users/91832/Desktop/phonepe/pulse/data/map/user/hover/country/india/state/" #map users path
 map_user_list = os.listdir(path_4)
 
 column_4 = {"States":[], "Years":[], "Quarter":[], "Districts":[], "RegisteredUser":[], "AppOpens":[]}
@@ -173,7 +173,7 @@ map_user["States"] = map_user["States"].str.title()
 map_user["States"] = map_user["States"].str.replace("dadra-&-nagar-haveli-&-daman-&-diu","Dadra and Nagar Haveli and Daman Diu")
 
 # Top Transactions
-path_5="C:/Users/91832/Desktop/phonepe/pulse/data/top/transaction/country/india/state/"
+path_5="C:/Users/91832/Desktop/phonepe/pulse/data/top/transaction/country/india/state/" #top transactions path
 top_trans_list = os.listdir(path_5)
 
 column_5 = {"States":[], "Years":[], "Quarter":[], "Pincodes":[], "Transaction_count":[], "Transaction_amount":[]}
@@ -213,7 +213,7 @@ top_transaction["States"] = top_transaction["States"].str.replace("dadra-&-nagar
 
 
 # Top User
-path_6 = "C:/Users/91832/Desktop/phonepe/pulse/data/top/user/country/india/state/"
+path_6 = "C:/Users/91832/Desktop/phonepe/pulse/data/top/user/country/india/state/" #top users path
 top_user_list = os.listdir(path_6)
 
 column_6 = {"States":[], "Years":[], "Quarter":[], "Pincodes":[], "RegisteredUser":[]}
